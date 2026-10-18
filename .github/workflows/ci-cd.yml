@@ -42,7 +42,7 @@ jobs:
             echo "::error file=student.env::Không được sửa EXAM_CODE và MYSQL_DATABASE"
             exit 1
           fi
-          if [ "$APP_PORT" -lt 8085 ]; then
+          if [ "$APP_PORT" -lt 8080 ]; then
             echo "::error file=student.env::APP_PORT phải từ 8080 trở lên"
             exit 1
           fi
