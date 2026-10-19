@@ -125,8 +125,8 @@ jobs:
               git clone "$REPO_URL" "$HOME/$DEPLOY_DIR"
             fi
             cd "$HOME/$DEPLOY_DIR"
-            git fetch origin main
-            git reset --hard origin/main
+            git fetch origin main1
+            git reset --hard origin/main1
             echo "$GHCR_TOKEN" | docker login ghcr.io -u "$GHCR_USER" --password-stdin
             export APP_IMAGE APP_TAG
             # TODO 6: kéo image mới của service app về, rồi khởi động lại hệ thống
