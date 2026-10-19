@@ -132,6 +132,6 @@ jobs:
             # TODO 6: kéo image mới của service app về, rồi khởi động lại hệ thống
             #         KHÔNG build trên server (gợi ý: pull app, up -d --no-build)
             docker compose --env-file student.env pull app
-            docker compose --env-file student.env -d --no-build
+            docker compose --env-file student.env up -d --no-build
             docker logout ghcr.io
             docker compose --env-file student.env ps
